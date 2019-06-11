@@ -23,13 +23,13 @@ As we've learned when working with clustering algorithms, one of their most comm
 
 Take a look at the following infographic that provides a visual representation of look-alike modeling:
 
-<img src='look-alike-model.png'>
+<img src='images/look-alike-model.png'>
 
 In the example above, the Dark Blue smiley faces represent customer segments that we already know are valuable. These are customers that we have identified in our data, and know for a fact have been good for us. Under normal circumstances, this would mean that we can divide our customers (or, more often, potential customers) into two groups: the group we know is valuable, and everyone else, who are all unknown to us. 
 
  This is where _Look-Alike Modeling_ comes in. A Look-Alike model uses a distance metric of our choice to rate the similarity of all each customer in our group of unknowns to customers in our known, valuable group. For customers that look extremely similar to customers in own known valuable group, we can assume with a very high likelihood that these customers will also be valuable, and should direct resources at capturing them! We'll likely also see customers that are only somewhat similar with to our valuable group, which tells us that they _could possibly be valuable_, but we aren't sure--and finally, customers that are look nothing like our known valuable customers segment. 
  
- If this sounds suspiciously like clustering to you, you are absolutely correct! Although this could also be framed as a classification or regression problem, its quite common to see clustering used to help determine similarity. After all, if we want to build a supervised learning model to predict if an unknown customer looks like our known valuable customers, then we need plenty of labled examples, and we don't always have that luxury! 
+ If this sounds suspiciously like clustering to you, you are absolutely correct! Although this could also be framed as a classification or regression problem, its quite common to see clustering used to help determine similarity. After all, if we want to build a supervised learning model to predict if an unknown customer looks like our known valuable customers, then we need plenty of labeled examples, and we don't always have that luxury! 
  
  In the real-world, using Look-Alike Models to find other customers that could potentially be valuable to us is called often referred to as **_Prospecting_**. Viewed in terms of the infographic above, we would choose direct resources to market to the customers that look like our valuable customers to increase our **_Top-Of-Funnel_**, meaning that we are trying to increase the number of potential customers that haven't shown interest in our product or company yet, but are likely to, due to their similarity to customers that already have. 
 
@@ -43,7 +43,7 @@ We are trying to build a supervised learning model, and we have 100,000 observat
 
 The main idea behind _Semi-Supervised Learning_ is to generate **_Pseudo-Labels_** that are possibly correct (at least better than random chance). To do this, we don't usually use clustering algorithms--instead, we use our supervised learning algorithms in an an unsupervised way. 
 
-<img src='semi-supervised.png'>
+<img src='images/semi-supervised.png'>
 
 Supervised Learning typically follows a set pattern:
 
@@ -59,7 +59,7 @@ Supervised Learning typically follows a set pattern:
 
 If Semi-Supervised Learning sounds a bit risky to you, you're not wrong. When done correctly, Semi-Supervised Learning can increase overall model performance by opening up access to much more data that we would have access to, and more data almost always results in better performance, but without the exorbitant costs of paying to have humans generate labels for the data needed. 
 
-However, there are definitely some problems that can arise from using a Semi-Supervised Learning approach, if we're not careful and thoughful throughout.
+However, there are definitely some problems that can arise from using a Semi-Supervised Learning approach, if we're not careful and thoughtful throughout.
 
 #### Feedback Loops and Self-Fulfilling Prophecies
 
