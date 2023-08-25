@@ -23,7 +23,7 @@ As we've learned when working with clustering algorithms, one of their most comm
 
 Take a look at the following infographic that provides a visual representation of look-alike modeling:
 
-<img src='images/new_look-alike-model.png'>
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/new_look-alike-model.png'>
 
 In the example above, the dark blue smiley faces represent customer segments that we already know are valuable. These are customers that we have identified in our data, and know for a fact have been good for us. Under normal circumstances, this would mean that we can divide our customers (or, more often, potential customers) into two groups: the group we know is valuable, and everyone else, who are all unknown to us. 
 
@@ -43,7 +43,7 @@ We are trying to build a supervised learning model, and we have 100,000 observat
 
 The main idea behind _semi-supervised learning_ is to generate **_pseudo-labels_** that are possibly correct (at least better than random chance). To do this, we don't usually use clustering algorithms -- instead, we use our supervised learning algorithms in an unsupervised way. 
 
-<img src='images/new_semi-supervised.png'>
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/new_semi-supervised.png'>
 
 Supervised learning typically follows a set pattern:
 
